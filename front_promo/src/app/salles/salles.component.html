@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 p-5" *ngFor="let salle of salles">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/salle1.jpeg" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title">
+            La salle {{ salle.etage }} contient {{ salle.contenance }} Places
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

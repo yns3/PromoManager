@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 p-5" *ngFor="let promo of promos">
+      <div class="card">
+        <img class="card-img-top" src="assets/img/promo.png" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="card-title">
+            {{ promo.id }} -- Promo : {{ promo.numero }} 
+          </h1>
+        </div>
+        <button type="submit" class="btn btn-danger" (click)="deletePromo(promo)">Supprimer</button>
+      </div>
+    </div>
+  </div>
+</div>
